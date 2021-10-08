@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="main.css">
+	<title>Pentagonal Number</title>
+	    <script language="javascript">
+
+        	function CombinatoricsChallenge(num) {
+        		document.getElementById('formRes').value =  1 + (5/2 * num * (num - 1));
+    		}
+		</script>
+</head>
+<body>
+	<header>
+		<h1 class="title">Pentagonal Number</h1>
+	</header>
+	<div class="list_card">
+		<div class="containerForCard">
+			<div class="card">
+				<form method="get">
+					<div class="ContainerForForm">
+						<p class="inputlabel">Enter positive integer</p>
+						<input class="inputbox" type="text" id="formNum" required>
+						<input type="button" value="Calculate" onclick="CombinatoricsChallenge(document.getElementById('formNum').value)">
+					    <p class="inputlabel">Result:</p>
+						<input class="inputbox" type="text" id="formRes" readonly>
+					</div>
+				</form>
+		    </div>
+		</div>
+	</div>
+</body>
+</html>
